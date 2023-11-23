@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LecturaAPI y HTML Responsivo</title>
+  <link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+  <header>
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h2>Contenido Principal</h2>
+    <p>Este es el contenido principal de la página web.</p>
+</section>
+<footer>
+  <p>Derechos Reservados &copy; 2023</p>
+</footer>
+<script>
+  document.getElementById('mobile-menu').addEventListener('click', function() {
+    document.querySelector('.navbar').classList.toggle('show');
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
